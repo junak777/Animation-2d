@@ -1,2 +1,28 @@
-# Animation-2d
-“Ye ek 2D animation app hai jo Flutter se banaya gaya hai. Isme user drawing karke chhote cartoon style animation bana sakte hain.”
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("My First Flutter App"),
+          backgroundColor: Colors.blue,
+        ),
+        body: const Center(
+          child: Text(
+            "Hello World!",
+            style: TextStyle(fontSize: 24),
+          ),
+        ),
+      ),
+    );
+  }
+}
